@@ -1,0 +1,15 @@
+
+*** These modified files were found in JOE when it aborted on Fri Aug 23 21:53:33 2019
+*** JOE was aborted by UNIX signal 1
+
+*** File '* Build Log *'
+
+*** File '(Unnamed)'
+/home/aluno/Documentos/PWII/.git/COMMIT_EDITMSG
+* Build Log *
+
+*** File '* Startup Log *'
+Processing '/etc/joe/editorrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
