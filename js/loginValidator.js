@@ -3,25 +3,25 @@ function validaLogin(elemento) {
     var regEx = /^[a-z0-9]{5,32}$/;
     var	teste = regEx.test(valida.value);
     if (teste) {
-        alert('debug email foi');
-        elemento.form.caixaAlerta.style.visibilty='hidden';
-        elemento.form.caixaAlerta.innerHTML='';
+        document.getElementById('caixaAlerta').style.visibility='hidden';
         valida = elemento.form.senhabox;
         regEx = /^[a-z0-9]{8,40}$/;
         teste = regEx.test(valida.value);
         if (teste) {
-           // elemento.form.senhabox.style.border='2px gray solid';
-           alert('debug tudo funcionou');
+            document.getElementById('caixaAlerta').style.visibility='hidden';
             return true;
         }
         else {
-            //elemento.form.senhabox.style.border='2px red solid';
-            alert('Senha inválida!');
+            document.getElementById('caixaAlerta').innerHTML='Senha inválida!';
+            document.getElementById('caixaAlerta').style.visibility='visible';
+            //alert('Senha inválida!');
             return false;
         }
     }
     else {
-        alert('Nome de usuário inválido!')
+        document.getElementById('caixaAlerta').innerHTML='Nome de usuário inválido!';
+        document.getElementById('caixaAlerta').style.visibility='visible';
+        //alert('Nome de usuário inválido!')
         return false;
     }
 }

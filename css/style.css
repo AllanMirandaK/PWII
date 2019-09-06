@@ -7,12 +7,9 @@
 }
 
 #caixaAlerta {
-    /*visibility: hidden;*/
+    visibility: hidden;
 }
 
-.visible-alert {
-    visibility: visible;
-}
 
 .user_card {
     height: 400px;
