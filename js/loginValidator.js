@@ -4,7 +4,8 @@ function validaLogin(elemento) {
     var	teste = regEx.test(valida.value);
     if (teste) {
         alert('debug email foi');
-        //elemento.form.loginbox.style.border='2px gray solid';
+        elemento.form.caixaAlerta.style.visibilty='hidden';
+        elemento.form.caixaAlerta.innerHTML='';
         valida = elemento.form.senhabox;
         regEx = /^[a-z0-9]{8,40}$/;
         teste = regEx.test(valida.value);
@@ -20,7 +21,6 @@ function validaLogin(elemento) {
         }
     }
     else {
-        //elemento.form.loginbox.style.border='2px red solid';
         alert('Nome de usuário inválido!')
         return false;
     }
